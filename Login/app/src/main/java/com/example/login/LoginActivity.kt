@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(i)
                 finish()
             } else {
-                Toast.makeText(applicationContext, "Errou", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "Errou!!!", Toast.LENGTH_LONG).show()
             }
         }
 
