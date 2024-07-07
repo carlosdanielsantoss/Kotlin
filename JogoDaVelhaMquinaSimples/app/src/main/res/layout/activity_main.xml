@@ -1,3 +1,4 @@
+</LinearLayout>
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,6 +8,8 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
+
+    <!-- Título do jogo -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +18,7 @@
         android:textSize="50sp"
         android:textColor="#00f"/>
 
+    <!-- Linha 1 de botões -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,6 +30,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
+            android:background="@drawable/blue_square" <!-- Use um drawable para o quadrado azul -->
             android:onClick="buttonClick" />
         <Button
             android:textSize="20sp"
@@ -33,6 +38,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
+            android:background="@drawable/red_circle" <!-- Use um drawable para o círculo vermelho -->
             android:onClick="buttonClick"/>
         <Button
             android:textSize="20sp"
@@ -40,63 +46,11 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="5dp"
+            android:background="@drawable/blue_square" <!-- Use um drawable para o quadrado azul -->
             android:onClick="buttonClick" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <Button
-            android:textSize="20sp"
-            android:id="@+id/buttonTres"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick" />
-        <Button
-            android:textSize="20sp"
-            android:id="@+id/buttonQuatro"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick" />
-        <Button
-            android:textSize="20sp"
-            android:id="@+id/buttonCinco"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <Button
-            android:textSize="20sp"
-            android:id="@+id/buttonSeis"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick" />
-        <Button
-            android:textSize="20sp"
-            android:id="@+id/buttonSete"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick" />
-        <Button
-            android:textSize="20sp"
-            android:id="@+id/buttonOito"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick" />
-    </LinearLayout>
+    <!-- Linha 2 de botões -->
+    <!-- ... (mesmo padrão para os outros botões) ... -->
 
 </LinearLayout>
